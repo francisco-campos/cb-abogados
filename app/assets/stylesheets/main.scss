@@ -1,0 +1,33 @@
+$break-small: 319px;
+$break-tablet: 766px;
+$break-large: 1200px;
+
+body {
+	font-size: 14px;
+	@media screen and (max-width: $break-tablet) {
+		font-size: 10px;
+	}
+	@media screen and (max-width: $break-small) {
+		font-size: 8px;
+	}
+}
+
+.brand {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	z-index: 1;
+	@media screen and (max-width: $break-tablet) {
+		top: 5px;
+		left: 5px;
+	}
+}
+
+.text-vertical-center h1 {
+	text-shadow: 1px 3px 2px #333;
+	color: #FFF;
+}
+.text-vertical-center h3 {
+	color: #FFF;
+	text-shadow: 1px 3px 2px #333;
+}
