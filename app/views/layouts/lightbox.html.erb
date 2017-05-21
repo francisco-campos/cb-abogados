@@ -20,28 +20,6 @@
   </head>
 
   <body>
-
-  	<!-- Navigation -->
-    <%= link_to root_path, :class => "brand", :title => "C&B Abogados" do %>
-      <%= image_tag "logo-cb-abogados.png", :alt => "C&B Abogados", :class => "", :width => "100" %>
-    <% end %>
-
-    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="glyphicon glyphicon-th"></i></a>
-    <nav id="sidebar-wrapper">
-        <ul class="sidebar-nav">
-            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="glyphicon glyphicon-th"></i></a>
-            <li class="sidebar-brand">
-                <a href="#top" onclick=$("#menu-close").click();>Menú</a>
-            </li>
-            <li>
-                <a href="#top" onclick=$("#menu-close").click();>Home</a>
-            </li>
-            <li>
-                <a href="#about" onclick=$("#menu-close").click();>Sobre Nosotros</a>
-            </li>
-        </ul>
-    </nav>
-
     <%= yield %>
   </body>
 </html>
