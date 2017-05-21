@@ -1,5 +1,5 @@
 class HomeController < ApplicationController
   def index
-  	@lista = 'Hola este mensaje va desde HomeController'
+  	@contact = Contact.new
   end
 end

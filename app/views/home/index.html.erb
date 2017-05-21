@@ -1,8 +1,9 @@
 <!-- Header -->
 <header id="top" class="header">
     <div class="text-vertical-center">
-        <h1>Comprometidos con la Excelencia</h1>
-        <h3>Dedicados a brindar una asesoría jurídica integral y corretaje de propiedades.</h3>
+        <h1>C&B Abogados,</h1>
+        <h3 class="center-min">Damos acceso a la justicia a todas las personas. Nuestro compromiso es brindar una solución a
+        sus conflictos legales y la defensa de sus derechos.</h3>
         <br>
         <a href="#about" class="btn btn-dark btn-lg">Contactanos y te llamaremos</a>
     </div>
@@ -149,7 +150,7 @@
                                 <h4>
                                     <strong>Michael London</strong>
                                 </h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>                                
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                             </div>
                         </div>
                     </div>
@@ -160,4 +161,24 @@
             <!-- /.row -->
         </div>
         <!-- /.container -->
+    </section>
+
+    <section>
+        <%
+        if notice
+            %>
+            <a id="alert-contact" href="/contacts/message" data-toggle="lightbox"
+            data-width="350" data-height="100" data-title="Gracias por Contactarnos"
+            data-footer="Llamanos: (+56) 9 9292 7382"></a>
+
+            <script>
+            $(document).ready(function(){
+                $('#alert-contact').click();
+            });
+            </script>
+            <%
+        end
+        %>
+
+        <%= render 'contacts/form', contact: @contact %>
     </section>

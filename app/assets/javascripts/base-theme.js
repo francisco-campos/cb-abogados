@@ -1,5 +1,12 @@
 $(document).ready(function() {
-// Closes the sidebar menu
+
+    //Lightbox
+    $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+        event.preventDefault();
+        $(this).ekkoLightbox();
+    });
+
+    // Closes the sidebar menu
     $("#menu-close").click(function(e) {
         e.preventDefault();
         $("#sidebar-wrapper").toggleClass("active");
