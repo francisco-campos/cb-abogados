@@ -1,5 +1,5 @@
 class HomeController < ApplicationController
   def index
-  	@contact = Contact.new
+  	#@contact = Contact.new
   end
 end
