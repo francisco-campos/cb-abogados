@@ -11,27 +11,27 @@
     </div>
   <% end %>
 
-  <div class="form-group">
-    <%= f.label :name %>
+  <div class="form-group contact">
+    <%= f.label :name, 'Nombre' %>
     <%= f.text_field :name, class: 'form-control' %>
   </div>
 
-  <div class="form-group">
-    <%= f.label :email %>
-    <%= f.text_field :email %>
+  <div class="form-group contact">
+    <%= f.label :email, 'Email' %>
+    <%= f.text_field :email, class: 'form-control' %>
+  </div>
+
+  <div class="form-group contact">
+    <%= f.label :phone, 'Teléfono' %>
+    <%= f.text_field :phone, class: 'form-control' %>
+  </div>
+
+  <div class="form-group contact">
+    <%= f.label :body, 'Ingrsa tu consulta' %>
+    <%= f.text_area :body, class: 'form-control' %>
   </div>
 
   <div class="form-group">
-    <%= f.label :phone %>
-    <%= f.text_field :phone %>
-  </div>
-
-  <div class="form-group">
-    <%= f.label :body %>
-    <%= f.text_area :body %>
-  </div>
-
-  <div class="form-group">
-    <%= f.submit %>
+    <%= f.submit 'Enviar Consulta', data: { disable_with: false } %>
   </div>
 <% end %>
