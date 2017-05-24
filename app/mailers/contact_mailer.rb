@@ -1,5 +1,5 @@
 class ContactMailer < ApplicationMailer
-  default from: 'contacto@camposyballesteros.cl'
+  default from: 'franciscojavier.c.c@gmail.com'
 
   def welcome_email(contact)
     @contact = contact
