@@ -11,7 +11,7 @@ RSpec.describe ContactMailer, type: :mailer do
     it 'renders the headers' do
       expect(mail.subject).to eq("C&B Abogados - Solicitud de contacto")
       expect(mail.to).to eq(["camposyballesteros@gmail.com"])
-      expect(mail.from).to eq(["contacto@camposyballesteros.cl"])
+      expect(mail.from).to eq(["franciscojavier.c.c@gmail.com"])
     end
 
     it 'renders the body' do
