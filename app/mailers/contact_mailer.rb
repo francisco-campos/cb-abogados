@@ -1,9 +1,9 @@
 class ContactMailer < ApplicationMailer
-  default from: 'franciscojavier.c.c@gmail.com'
+  default from: 'contacto@camposyballesteros.cl'
 
   def welcome_email(contact)
     @contact = contact
     @url = 'hola'
-    mail(to: 'camposyballesteros@gmail.com', subject: 'C&B Abogados - Solicitud de contacto')
+    mail(to: 'franciscojavier.c.c@gmail.com', subject: 'C&B Abogados - Solicitud de contacto')
   end
 end
