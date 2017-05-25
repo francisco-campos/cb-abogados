@@ -46,7 +46,8 @@ body {
 
 .btn-dark:hover,
 .btn-dark:focus,
-.btn-dark:active {
+.btn-dark:active,
+.btn-dark:visited {
     color: #fff;
     background-color: rgba(0,0,0,0.7);
 }

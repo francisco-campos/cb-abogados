@@ -26,6 +26,10 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 		left: 5px;
 	}
 }
+.brand:hover {
+	z-index: 1;
+	background: none;
+}
 
 .text-vertical-center h1 {
 	text-shadow: 1px 3px 2px #333;
